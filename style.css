@@ -8,14 +8,25 @@
     box-sizing: border-box;
 }
 
-:root{
-    --cor1: #f7f7f9;
-}
-
 body{
     font-family: "Poppins", sans-serif;
     background-color: #18181B;
 }
+
+section > h3{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 27px;
+    color: #1d4ed8;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.527);
+}
+
+section > h4{
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+
 
 /* Configuração do Header */
 
@@ -23,10 +34,7 @@ nav{
     max-width: 1200px;
     margin: auto;
     padding: 2rem 1rem;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
-    height: 200px;
+    height: 190px;
 }
 
 img#nav-logo{
@@ -39,15 +47,13 @@ img#nav-logo{
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 40px;
+    gap: 25px;
     flex-direction: row;
     text-transform: uppercase;
     font-size: 15px;
     margin-right: 85px;
     transform: translateY(-85px);
     margin-left: 10px;
-
-
 }
 
 .link a{
@@ -55,6 +61,8 @@ img#nav-logo{
     color: white;
     text-decoration: none;
     position: relative;
+    font-size: 15px;
+  
 }
 
 .link a::after{
@@ -75,13 +83,10 @@ img#nav-logo{
 
 /* Configuração do Main*/
 
-section.banner{
-    height: 400px;
-    background-color: black;
-}
+/* Sobre */
 
 section.sobre{
-    height: 100px;
+    border-top: 1px solid white;
     color: white;
     text-align: center;
     padding-top: 60px;
@@ -89,21 +94,101 @@ section.sobre{
     position: relative;
 }
 
-section >  h3{
-    padding-top: 30px;
-    padding-bottom: 20px;
+section.sobre > h1 > span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px #1d4ed8;
+
 }
 
-section >  h4{
+section.sobre >  h3{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #1d4ed8;
+    font-size: 27px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.548);
+}
+
+section.sobre >  h4{
     padding-top: 10px;
     padding: 10px 30px;
 }
 
-.sobre > img{
+section.sobre > img{
     width: 400px;
     height: 400px;
     margin-top: 10px;
     border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.637);
+}
+
+.blur{
+    margin-top: 50px;
+    position: absolute;
+    box-shadow: 0 0 1000px 30px #1d4ed8;
+    z-index: -1;
+}
+
+/* Portas */
+
+section.portas{
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+}
+
+
+section.portas > p {
+    font-size: 14px;
+    text-align: center;
+}
+
+section.portas > img{
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.637);
+    border: 2px solid white;
+}
+
+ul.nav-portas{
+    background-color: #27272a;
+    margin-top: 5px;
+    list-style: inside;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: start;
+    border: 1px solid;
+}
+
+li.itens-porta{
+   padding: 11px;
+   font-size: 12px;
+}
+
+section.portas > img:hover{
+    transform: translateY(-10px);
+    transition: transform 0.5s ease;
+}
+
+
+
+/* Serviços */
+
+section.serviços{
+    color: white;
+    text-align: center;
+
+}
+
+section.serviços > h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #1d4ed8;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.76);
 }
 
 .itens{
@@ -137,19 +222,42 @@ section >  h4{
     transform: translateY(-3px);
     transition: transform 0.2s ease;
 }
-.blur{
-    margin-top: 50px;
-    position: absolute;
-    box-shadow: 0 0 1000px 30px #1d4ed8;
-    z-index: -1;
+
+
+/* Footer */
+
+.footer{
+    background-color: #03030323;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
 }
 
-section.serviços{
-    height: 500px;
-    
+#image-footer{
+    max-width: 250px;
 }
 
-section.contato{
-    height: 500px;
-    
+div.social-media{
+   margin-left: -20px;
+   margin-bottom: 10px;
+  
+}
+
+div.social-media a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+div.social-media a:hover{
+    color: #1d4ed8;  
+}
+
+div.chamada-acao{
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
