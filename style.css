@@ -34,7 +34,7 @@ nav{
     max-width: 1200px;
     margin: auto;
     padding: 2rem 1rem;
-    height: 190px;
+    height: 195px;
 }
 
 img#nav-logo{
@@ -95,8 +95,7 @@ section.sobre{
 }
 
 section.sobre > h1 > span{
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px #1d4ed8;
+    color: #1d4ed8;
 
 }
 
