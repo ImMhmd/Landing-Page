@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 993px){
+    .nav-links{
+        display: flex;
+        justify-content: center;
+    }
+    img#nav-logo{
+        transform: translateY(-10px);
+        width: 270px;
+    }
+
+    
+}

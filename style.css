@@ -31,7 +31,6 @@ section > h4{
 /* Configuração do Header */
 
 nav{
-    max-width: 1200px;
     margin: auto;
     padding: 2rem 1rem;
     height: 195px;
@@ -90,7 +89,7 @@ section.sobre{
     color: white;
     text-align: center;
     padding-top: 60px;
-    max-width: 1200px;
+    
     position: relative;
 }
 
