@@ -1,7 +1,7 @@
-function scrollToElement(elementSelector, instance = 0){
+function scrollToElement(elementSelector, instancia = 0){
     const elements = document.querySelectorAll(elementSelector);
-    if(elements.length > instance){
-        elements[instance].scrollIntoView({ behavior:'smooth'});
+    if(elements.length > instancia){
+        elements[instancia].scrollIntoView({ behavior:'smooth'});
     }
 }
 
