@@ -1,11 +1,23 @@
-let menu = document.getElementById('menu')
-
-menu.addEventListener('click', clickMenu)
-
-function clickMenu(){
-    if (links.style.display == 'block'){
-        links.style.display = 'none'
-    } else{
-        links.style.display = 'block'
+function scrollToElement(elementSelector, instance = 0){
+    const elements = document.querySelectorAll(elementSelector);
+    if(elements.length > instance){
+        elements[instance].scrollIntoView({ behavior:'smooth'});
     }
 }
+
+const link1 = document.getElementById('link1');
+const link2 = document.getElementById('link2');
+const link3 = document.getElementById('link3');
+
+link1.addEventListener("click", () => {
+    scrollToElement('.sobre')
+})
+
+link2.addEventListener("click", () => {
+    scrollToElement('.portas')
+})
+
+link3.addEventListener("click", () => {
+    scrollToElement('.serviços')
+})
+

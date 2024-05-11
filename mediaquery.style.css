@@ -6,9 +6,23 @@
         justify-content: center;
     }
     img#nav-logo{
-        transform: translateY(-10px);
+        transform: translateY(-20px);
         width: 270px;
     }
 
+   ul.nav-portas{
+    width: 600px;
+    margin: auto;
+    margin-top: 5px;
+   }
+
+   li.itens{
+    width: 600px;
+   }
+   
+   section.serviços ul{
+    display: flex;
+    justify-content: center;
+   }
     
 }
